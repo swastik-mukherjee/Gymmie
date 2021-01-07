@@ -4,8 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gymmie</title>
-</head>
-<body>
     
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+ <!-- CSS Reset -->
+ <style>
+
+    body{
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Baloo Bhaina 2', cursive;;
+        background: url('images/power.jpg')no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;; 
+        color: white;
+    }
+    .left{
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        display: inline-block;
+        border: 2px solid greenyellow;
+    }
+    .left img{
+        width: 78px;
+        filter: invert();
+    }
+    .mid{
+        
+        display: block;
+        width: 43%;
+        margin: 12px auto;
+        border: 2px solid greenyellow;
+        top: 20px;
+        
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        border: 2px solid greenyellow;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 25px;
+    }
+    .navbar li a {
+       
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+
+    }
+    .navbar li a:hover, .navbar li a:active{
+       
+       text-decoration: underline;
+       color: yellow;
+
+   }
+   .btn{
+       margin: 0px 9px;
+       background-color: black;
+       color: white;
+       padding: 4px 14px;
+       border: 2px solid burlywood;
+       border-radius: 10px;
+       font-size: 20px;
+       cursor: pointer;
+   }
+   .btn:hover{
+       background-color: rgb(44, 42, 42);
+   }
+ </style>
+
+
+<body>
+
+   <header class="header">
+
+       <!-- left box for logo -->
+       <div class="left">
+        <img src="images/logo.png" alt="Gymmie">
+       </div>
+
+       <!-- Middle box for navbar -->
+       <div class="mid">
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">FitBit</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+       </div>
+
+       <!-- Right box for button-->
+       <div class="right">
+        <button class="btn">Contact Us</button>
+        <button class="btn">Mail Us</button>
+       </div>
+   </header>
 </body>
 </html>
